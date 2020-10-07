@@ -9,7 +9,7 @@ include './data/articles.php';
 <?php include './templates/header.tpl.php';
 
 
-var_dump($_GET);
+//var_dump($_GET);
 $filteredCategories = filterArticlesByCategory($_GET['category']);
 
 ?>
