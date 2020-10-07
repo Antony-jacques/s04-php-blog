@@ -4,6 +4,7 @@ include './data/articles.php';
 
 $filteredArticles = filterArticlesByKeyword($_GET['query']);
 
+
 ?>
 
 <?php include './templates/head.tpl.php'; ?>
