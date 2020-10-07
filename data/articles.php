@@ -128,3 +128,21 @@ function filterArticlesByKeyword(string $keyword): array {
     // Renvoie le tableau "résultat"
     return $result;
 }
+
+
+// Fonction permettant de filtrer les articles par categorie
+function filterArticlesByCategory(string $cat): array {
+    global $articles;
+    // Initialise un tableau "résultat" vide
+    $result2 = [];
+    // Pour chaque article du tableau "articles"
+    foreach ($articles as $article) {
+        // Si l'article contient la categorie recherchée
+        if ($article['category'] === $cat) {
+            // Ajoute l'article au tableau "résult2"
+            array_push($result2, $article);
+        }
+    }
+    // Renvoie le tableau "résultat"
+    return $result2;
+}
